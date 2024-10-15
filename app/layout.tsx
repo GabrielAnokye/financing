@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import {Inter, IBM_Plex_Serif} from "next/font/google";
+import { Inter, IBM_Plex_Serif } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const ibmPlexSerif = IBM_Plex_Serif({
   subsets: ["latin"],
-  weight: ['400', '700'],
+  weight: ["400", "700"],
   variable: "--font-ibm-plex-serif",
 });
 
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
   title: "SpendSmart",
   description: "SpendSmart is a personal finance app.",
   icons: {
-    icon: '/icons/logo.svg',
-  }
+    icon: "/icons/Gyomei.svg",
+  },
 };
 
 export default function RootLayout({
