@@ -18,7 +18,7 @@ const Home = () => {
             type="greeting"
             title="Welcome"
             user={loggedIn?.firstName ?? "Guest"}
-            subtext="Access and manage your account and transactions efficiently here."
+            subtext="Access and manage your account and transactions efficiently."
           />
           <TotalBalanceBox
             accounts={[]}
