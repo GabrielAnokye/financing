@@ -6,7 +6,7 @@ import React from "react";
 const Home = () => {
   const loggedIn = {
     firstName: "Gabriel",
-    lastName: "Mine",
+    lastName: "Choco",
     email: "contact@gmail.com",
   };
 
@@ -18,7 +18,7 @@ const Home = () => {
             type="greeting"
             title="Welcome"
             user={loggedIn?.firstName ?? "Guest"}
-            subtext="Access and manage your account and transactions efficiently. This app is highly reliable and secured."
+            subtext="Access and manage your account and transactions efficiently."
           />
           <TotalBalanceBox
             accounts={[]}
@@ -29,7 +29,11 @@ const Home = () => {
         RECENT TRANSACTIONS
       </div>
 
-      <RightSidebar user={loggedIn} transactions={[]} banks={[]} />
+      <RightSidebar
+        user={loggedIn}
+        transactions={[]}
+        banks={[{ currentBalance: 145.5 }, { currentBalance: 120.45 }]}
+      />
     </section>
   );
 };
