@@ -2,10 +2,8 @@ import React from "react";
 
 const SignIn = () => {
   return (
-    <div>
-      SignIn
-    </div>
+    <section className="flex-center size-full max-sm:px-6">SignIn</section>
   );
-}
+};
 
 export default SignIn;
